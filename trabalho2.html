@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang=”pt”>
+<head>
+  	<meta charset="utf-8">
+</head>
+
+<body>
+<h1>Exercicios de fixação </h1>
+<p><strong>Escreva um código que mostre os números ímpares entre 1 e 10.</strong></p>
+<p id="ex1"> </p>
+
+<script type="text/javascript">
+	var text = "";
+	var i;
+		for (i = 1; i < 10; i++) {
+			if ((i%2) != 0){
+			text += i+ " numero ímpar <br>";
+			}
+		}
+	document.getElementById("ex1").innerHTML = text;
+</script>
+
+<p><strong>Escreva um código que calcule a soma de 1 até 100. (obs: a resposta é 5050).</strong> </p>
+<p id="ex2"> </p>
+
+<script type="text/javascript">
+	var texte2 ="";
+	var i;
+	var soma = 0;
+		for (i = 0; i < 101; i++) {
+		soma = soma +i;
+		}
+	texte2 += "Soma dos numeros: " + soma;
+	document.getElementById("ex2").innerHTML = text2;
+</script>
+
+<p><strong> Crie um Array igual ao abaixo e mostre apenas os nomes das pessoas que tenham 4 letras. var pessoas = ["João", "José", "Maria", "Sebastião", "Antônio"]; </strong></p>
+<p id="ex3"> </p>
+
+<script type="text/javascript">
+    var pessoas =  ["João", "José", "Maria", "Sebastião", "Antônio"];
+    var mostra  = "";
+    for (var i = 0; i < pessoas.length ; i++) {
+        if (pessoas[i].length == 4) 
+        mostra += pessoas[i] + "<br>";
+    };
+	document.getElementById("ex3").innerHTML = mostra;
+</script>
+
+
+<p><strong> Crie uma função chamada “MostraMoeda (param)” que receba um número e retorne uma string formatada como moeda.<strong></p>
+<p id="ex4"> </p>
+
+<script type="text/javascript">
+    function MostraMoeda() {
+    	var numero = 9.9;
+		var formatado = numero.toFixed(2);
+		formatado = "R$ " + formatado;
+		formatado = formatado.replace(".", ",");
+	}
+	test4 += "esse exercicio esta com erros";
+	document.getElementById("ex4").innerHTML = test4;
+</script>
+
+</body>
+</html>
